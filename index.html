@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data-items</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Custom Table</h2>
+        <div class="add-item">
+            <h3>Add item</h3>
+            <input type="text" id="name" placeholder="Enter Name">
+            <input type="text" id="category" placeholder="Enter Category">
+            <input type="number" id="year" placeholder="Enter Year">
+            <button onclick="addItems()">Add Item</button>
+        </div>
+        <div class="search-item">
+            <h3>Search for Item..</h3>
+            <input type="text" id="search" placeholder="Search for names" onkeyup="searchItem()">
+        </div>
+        <table id="tableItems">
+            <thead>
+                <tr>
+                    <th>S.no</th>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Year</th>
+                    <th>Edit Entry</th>
+                    <th>Delete Entry</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be added dynamically here -->
+            </tbody>
+        </table>
+    <script src="scripts.js"></script>
+</body>
+</html>

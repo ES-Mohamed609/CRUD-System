@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fefefe;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+.add-item, .search-item {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+input {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+}
+input:focus{
+    border-color: rgb(35, 117, 9);
+    transform: scale(1.1);
+}
+
+button {
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+button:focus{
+    border-color: rgb(35, 117, 9);
+    transform: scale(1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+thead {
+    background-color: green;
+    color: white;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+.edit-btn, .delete-btn {
+    cursor: pointer;
+}
