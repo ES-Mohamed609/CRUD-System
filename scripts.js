@@ -23,16 +23,16 @@ function addItems() {
     }
 }
 
-function editItems(button) {
+function editItem(button) {
     let row = button.parentElement.parentElement;
     document.getElementById('name').value = row.cells[1].innerText;
     document.getElementById('category').value = row.cells[2].innerText;
     document.getElementById('year').value = row.cells[3].innerText;
 
-    deleteItems(button);
+    deleteItem(button);
 }
 
-function deleteItems(button) {
+function deleteItem(button) {
     let row = button.parentElement.parentElement;
     tableItems.deleteRow(row.rowIndex - 1);
     updateIndex();
@@ -45,11 +45,11 @@ function updateIndex() {
     });
 }
 
-function searchItems() {
-    let searchValue = document.getElementById('search').value.toLowerCase();
+function searchItem() {
+    let searching = document.getElementById('search').value.toLowerCase();
     Array.from(tableItems.rows).forEach((row) => {
         let itemName = row.cells[1].innerText.toLowerCase();
-        if (itemName.includes(searchValue)) {
+        if (itemName.includes(searching)) {
             row.style.display = '';
         } else {
             row.style.display = 'none';
